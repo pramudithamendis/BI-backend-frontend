@@ -622,6 +622,26 @@
       "order_by": "desc",
       "is_cumulative": 1,
       "distinct_col": "email"
+    },
+    {
+      "table_name": "total_game_plays_daily",
+      "metric_name": ["Top days of game plays"],
+      "record_count": 5,
+      "columns": ["date_", "total_sessions", "created_at"],
+      "order_by_column": "total_sessions",
+      "order_by": "desc",
+      "is_cumulative": 0,
+      "distinct_col": ""
+    },
+    {
+      "table_name": "total_game_play_comission_daily",
+      "metric_name": ["Top game play commissions"],
+      "record_count": 5,
+      "columns": ["date_", "base_amount_100pct", "developer_share_50pct", "tax_18pct", "remainder_you_keep_32pct"],
+      "order_by_column": "remainder_you_keep_32pct",
+      "order_by": "desc",
+      "is_cumulative": 0,
+      "distinct_col": ""
     }
   ],
   "Charts": [
