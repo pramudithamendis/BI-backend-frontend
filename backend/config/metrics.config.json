@@ -1,0 +1,648 @@
+{
+  "Cards": [
+    {
+      "table_name": "total_deposits_weekly",
+      "metric_name": ["This Week Deposits Amounts", "This Week Transactions"],
+      "record_count": 1,
+      "columns": ["week_start_date", "week_end_date", "total_completed_amount", "total_transactions"],
+      "order_by_column": "Week_Start_Date",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_users_daily",
+      "metric_name": ["Today users"],
+      "record_count": 1,
+      "columns": ["date", "value"],
+      "order_by_column": "date",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_users_weekly",
+      "metric_name": ["This week users"],
+      "record_count": 1,
+      "columns": ["week", "value"],
+      "order_by_column": "week",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_users_monthly",
+      "metric_name": ["This month users"],
+      "record_count": 1,
+      "columns": ["month", "value"],
+      "order_by_column": "month",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_users_cumulative",
+      "metric_name": ["Total users"],
+      "record_count": 1,
+      "columns": ["date", "value"],
+      "order_by_column": "date",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_deposits_daily",
+      "metric_name": ["Today deposit amounts", "Today deposit transactions"],
+      "record_count": 1,
+      "columns": ["date_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_deposits_weekly",
+      "metric_name": ["This week deposit amount", "This week deposit transaction amount"],
+      "record_count": 1,
+      "columns": ["week_start_date", "week_end_date", "total_completed_amount", "total_transactions"],
+      "order_by_column": "week_start_date",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_deposits_monthly",
+      "metric_name": ["This month deposit amount", "This month deposit transaction amount"],
+      "record_count": 1,
+      "columns": ["month_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "month_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_deposits_cumulative",
+      "metric_name": ["Total deposit amount", "Total deposit transaction amount"],
+      "record_count": 1,
+      "columns": ["date_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_deposits_fiat_daily",
+      "metric_name": ["Today deposit fiat amount", "Today deposit fiat transaction"],
+      "record_count": 1,
+      "columns": ["date_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_deposits_fiat_weekly",
+      "metric_name": ["This week deposit fiat amount", "This week deposit fiat transaction"],
+      "record_count": 1,
+      "columns": ["year_week", "week_start_date", "week_end_date", "total_completed_amount", "total_transactions"],
+      "order_by_column": "year_week",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_deposits_fiat_monthly",
+      "metric_name": ["This month deposit fiat amount", "This month deposit fiat transaction"],
+      "record_count": 1,
+      "columns": ["month_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "month_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_deposits_fiat_cumulative",
+      "metric_name": ["Total deposit fiat amount", "Total deposit fiat transaction"],
+      "record_count": 1,
+      "columns": ["date_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_deposits_crypto_daily",
+      "metric_name": ["Today deposit crypto amount", "Today deposit crypto transaction"],
+      "record_count": 1,
+      "columns": ["date_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_deposits_crypto_weekly",
+      "metric_name": ["This week deposit crypto amount", "This week deposit crypto transaction"],
+      "record_count": 1,
+      "columns": ["year_week", "week_start_date", "week_end_date", "total_completed_amount", "total_transactions"],
+      "order_by_column": "year_week",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_deposits_crypto_monthly",
+      "metric_name": ["This month deposit crypto amount", "This month deposit crypto transaction"],
+      "record_count": 1,
+      "columns": ["month_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "month_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_deposits_crypto_cumulative",
+      "metric_name": ["Total deposit crypto amount", "Total deposit crypto transaction"],
+      "record_count": 1,
+      "columns": ["date_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_deposits_userwise_fiat_daily",
+      "metric_name": ["Today deposit userwise fiat amount", "Today deposit userwise fiat transaction"],
+      "record_count": 1,
+      "columns": ["user_id", "email", "first_name", "last_name", "date_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_deposits_userwise_fiat_weekly",
+      "metric_name": ["This week deposit userwise fiat amount", "This week deposit userwise fiat transaction"],
+      "record_count": 1,
+      "columns": ["user_id", "email", "first_name", "last_name", "year", "week_number", "week_label", "total_completed_amount", "total_transactions"],
+      "order_by_column": "week_number",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_deposits_userwise_fiat_monthly",
+      "metric_name": ["This month deposit userwise fiat amount", "This month deposit userwise fiat transaction"],
+      "record_count": 1,
+      "columns": ["user_id", "email", "first_name", "last_name", "month_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "month_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_deposits_userwise_fiat_cumulative",
+      "metric_name": ["Total deposit userwise fiat amount", "Total deposit userwise fiat transaction"],
+      "record_count": 1,
+      "columns": ["date_", "user_id", "email", "first_name", "last_name", "total_completed_amount", "total_transactions"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_deposits_userwise_crypto_daily",
+      "metric_name": ["Today deposit userwise crypto amount", "Today deposit userwise crypto transaction"],
+      "record_count": 1,
+      "columns": ["user_id", "email", "first_name", "last_name", "date_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_deposits_userwise_crypto_weekly",
+      "metric_name": ["This week deposit userwise crypto amount", "This week deposit userwise crypto transaction"],
+      "record_count": 1,
+      "columns": ["user_id", "email", "first_name", "last_name", "year", "week_number", "week_label", "total_completed_amount", "total_transactions"],
+      "order_by_column": "week_number",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_deposits_userwise_crypto_monthly",
+      "metric_name": ["This month deposit userwise crypto amount", "This month deposit userwise crypto transaction"],
+      "record_count": 1,
+      "columns": ["user_id", "email", "first_name", "last_name", "month_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "month_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_deposits_userwise_crypto_cumulative",
+      "metric_name": ["Total deposit userwise crypto amount", "Total deposit userwise crypto transaction"],
+      "record_count": 1,
+      "columns": ["user_id", "email", "first_name", "last_name", "total_completed_amount", "total_transactions"],
+      "order_by_column": "user_id",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_deposits_userwise_daily",
+      "metric_name": ["Total deposit userwise amount", "Total deposit userwise transaction"],
+      "record_count": 1,
+      "columns": ["user_id", "email", "first_name", "last_name", "date_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_deposits_userwise_weekly",
+      "metric_name": ["This week deposit userwise amount", "This week deposit userwise transaction"],
+      "record_count": 1,
+      "columns": ["user_id", "email", "first_name", "last_name", "year", "week_number", "week_label", "total_completed_amount", "total_transactions"],
+      "order_by_column": "week_number",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_deposits_userwise_monthly",
+      "metric_name": ["This month deposit userwise amount", "This month deposit userwise transaction"],
+      "record_count": 1,
+      "columns": ["user_id", "email", "first_name", "last_name", "month_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "month_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_deposits_both_total_userwise",
+      "metric_name": ["Total deposit userwise amount", "Total deposit userwise transaction"],
+      "record_count": 1,
+      "columns": ["user_id", "email", "first_name", "last_name", "total_completed_amount", "total_transactions"],
+      "order_by_column": "user_id",
+      "order_by": "desc"
+    },
+
+    {
+      "table_name": "total_withdrawal_fiat_daily",
+      "metric_name": ["Today withdrawal fiat amount", "Today withdrawal fiat transaction"],
+      "record_count": 1,
+      "columns": ["date_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_withdrawal_fiat_weekly",
+      "metric_name": ["This week withdrawal fiat amount", "This week withdrawal fiat transaction"],
+      "record_count": 1,
+      "columns": ["year_week", "week_start_date", "week_end_date", "total_completed_amount", "total_transactions"],
+      "order_by_column": "year_week",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_withdrawal_fiat_monthly",
+      "metric_name": ["This month withdrawal fiat amount", "This month withdrawal fiat transaction"],
+      "record_count": 1,
+      "columns": ["month_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "month_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_withdrawal_fiat_cumulative",
+      "metric_name": ["Total withdrawal fiat amount", "Total withdrawal fiat transaction"],
+      "record_count": 1,
+      "columns": ["date_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_withdrawal_crypto_daily",
+      "metric_name": ["Today withdrawal crypto amount", "Today withdrawal crypto transaction"],
+      "record_count": 1,
+      "columns": ["date_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_withdrawal_crypto_weekly",
+      "metric_name": ["This week withdrawal crypto amount", "This week withdrawal crypto transaction"],
+      "record_count": 1,
+      "columns": ["year_week", "week_start_date", "week_end_date", "total_completed_amount", "total_transactions"],
+      "order_by_column": "year_week",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_withdrawal_crypto_monthly",
+      "metric_name": ["This month withdrawal crypto amount", "This month withdrawal crypto transaction"],
+      "record_count": 1,
+      "columns": ["month_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "month_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_withdrawal_crypto_cumulative",
+      "metric_name": ["Total withdrawal crypto amount", "Total withdrawal crypto transaction"],
+      "record_count": 1,
+      "columns": ["date_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_withdrawals_daily",
+      "metric_name": ["Today withdrawal amounts", "Today withdrawal transactions"],
+      "record_count": 1,
+      "columns": ["date_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_withdrawals_weekly",
+      "metric_name": ["This week withdrawal amount", "This week withdrawal transaction amount"],
+      "record_count": 1,
+      "columns": ["year_week", "week_start_date", "week_end_date", "total_completed_amount", "total_transactions"],
+      "order_by_column": "year_week",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_withdrawals_monthly",
+      "metric_name": ["This month withdrawal amount", "This month withdrawal transaction amount"],
+      "record_count": 1,
+      "columns": ["month_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "month_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_withdrawals_cumulative",
+      "metric_name": ["Total withdrawal amount", "Total withdrawal transaction amount"],
+      "record_count": 1,
+      "columns": ["date_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_withdrawals_userwise_fiat_daily",
+      "metric_name": ["Today withdrawal userwise fiat amounts", "Today withdrawal userwise fiat transactions"],
+      "record_count": 1,
+      "columns": ["user_id", "email", "first_name", "last_name", "date_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_withdrawals_userwise_fiat_weekly",
+      "metric_name": ["This week withdrawal amount", "This week withdrawal transaction amount"],
+      "record_count": 1,
+      "columns": ["user_id", "email", "first_name", "last_name", "year", "week_number", "week_label", "total_completed_amount", "total_transactions"],
+      "order_by_column": "week_number",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_withdrawals_userwise_fiat_monthly",
+      "metric_name": ["This month withdrawal amount", "This month withdrawal transaction amount"],
+      "record_count": 1,
+      "columns": ["user_id", "email", "first_name", "last_name", "month_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "month_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_withdrawals_userwise_fiat_cumulative",
+      "metric_name": ["Total withdrawal amount", "Total withdrawal transaction amount"],
+      "record_count": 1,
+      "columns": ["date_", "user_id", "email", "first_name", "last_name", "total_completed_amount", "total_transactions"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_withdrawals_userwise_crypto_daily",
+      "metric_name": ["Today withdrawal userwise crypto amounts", "Today withdrawal userwise crypto transactions"],
+      "record_count": 1,
+      "columns": ["user_id", "email", "first_name", "last_name", "date_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_withdrawals_userwise_crypto_weekly",
+      "metric_name": ["This week withdrawal userwise crypto amount", "This week withdrawal userwise crypto transaction amount"],
+      "record_count": 1,
+      "columns": ["user_id", "email", "first_name", "last_name", "year", "week_number", "week_label", "total_completed_amount", "total_transactions"],
+      "order_by_column": "week_number",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_withdrawals_userwise_crypto_monthly",
+      "metric_name": ["This month withdrawal userwise crypto amount", "This month withdrawal userwise crypto transaction amount"],
+      "record_count": 1,
+      "columns": ["user_id", "email", "first_name", "last_name", "month_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "month_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_withdrawals_userwise_crypto_cumulative",
+      "metric_name": ["Total withdrawal userwise crypto amount", "Total withdrawal transaction userwise crypto amount"],
+      "record_count": 1,
+      "columns": ["date_", "user_id", "email", "first_name", "last_name", "total_completed_amount", "total_transactions"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+
+    {
+      "table_name": "total_withdrawals_userwise_daily",
+      "metric_name": ["Today withdrawal userwise amounts", "Today withdrawal userwise transactions"],
+      "record_count": 1,
+      "columns": ["user_id", "email", "first_name", "last_name", "date_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "user_id",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_withdrawals_userwise_weekly",
+      "metric_name": ["This week withdrawal userwise amount", "This week withdrawal userwise transaction amount"],
+      "record_count": 1,
+      "columns": ["user_id", "email", "first_name", "last_name", "year", "week_number", "week_label", "total_completed_amount", "total_transactions"],
+      "order_by_column": "week_number",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_withdrawals_userwise_monthly",
+      "metric_name": ["This month withdrawal userwise amount", "This month withdrawal userwise transaction amount"],
+      "record_count": 1,
+      "columns": ["user_id", "email", "first_name", "last_name", "month_", "total_completed_amount", "total_transactions"],
+      "order_by_column": "month_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_withdrawals_userwise_cumulative",
+      "metric_name": ["Total withdrawal userwise amount", "Total withdrawal transaction userwise amount"],
+      "record_count": 1,
+      "columns": ["date_", "user_id", "email", "first_name", "last_name", "total_completed_amount", "total_transactions"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_game_plays_daily",
+      "metric_name": ["Today game plays"],
+      "record_count": 1,
+      "columns": ["date_", "total_sessions"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_game_plays_weekly",
+      "metric_name": ["This week game plays"],
+      "record_count": 1,
+      "columns": ["week_start", "week_end", "total_sessions"],
+      "order_by_column": "week_start",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_game_plays_monthly",
+      "metric_name": ["This month game plays"],
+      "record_count": 1,
+      "columns": ["month_", "total_sessions"],
+      "order_by_column": "month_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_game_plays_cumulative",
+      "metric_name": ["Total game plays"],
+      "record_count": 1,
+      "columns": ["date_", "total_sessions"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+
+    {
+      "table_name": "total_game_plays_without_AI_and_Train_With_AI_cumulative",
+      "metric_name": ["Total game plays without AI and train with AI"],
+      "record_count": 1,
+      "columns": ["date_", "total_sessions"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_game_plays_without_AI_and_Train_With_AI_daily",
+      "metric_name": ["Today game plays without AI and train with AI"],
+      "record_count": 1,
+      "columns": ["session_date", "total_sessions"],
+      "order_by_column": "session_date",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_game_play_pool_amount_cumulative",
+      "metric_name": ["Total game play pool amount"],
+      "record_count": 1,
+      "columns": ["date_", "coin_bet_amount", "total_sessions"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_game_play_pool_amount_daily",
+      "metric_name": ["Today game play pool amount"],
+      "record_count": 1,
+      "columns": ["date_", "coin_bet_amount", "total_sessions"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_game_play_comission_cumulative",
+      "metric_name": ["Total game play commission"],
+      "record_count": 1,
+      "columns": ["date_", "summary_date", "base_amount_100pct", "developer_share_50pct", "tax_18pct", "remainder_you_keep_32pct"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_game_play_comission_daily",
+      "metric_name": ["Today game play commission"],
+      "record_count": 1,
+      "columns": ["date_", "base_amount_100pct", "developer_share_50pct", "tax_18pct", "remainder_you_keep_32pct"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_game_play_comission_weekly",
+      "metric_name": ["This week game play commission"],
+      "record_count": 1,
+      "columns": ["year_week", "week_start_date", "week_end_date", "base_amount_100pct", "developer_share_50pct", "tax_18pct", "remainder_you_keep_32pct"],
+      "order_by_column": "year_week",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "total_game_play_comission_monthly",
+      "metric_name": ["This month game play commission"],
+      "record_count": 1,
+      "columns": ["month_", "base_amount_100pct", "developer_share_50pct", "tax_18pct", "remainder_you_keep_32pct"],
+      "order_by_column": "month_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "02_AI_matches_cumulative",
+      "metric_name": ["Total 02 AI matches"],
+      "record_count": 1,
+      "columns": ["date_", "total_ai_matches", "player_wins", "player_losses", "spend_amount_usd", "report_date"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "02_AI_matches_daily",
+      "metric_name": ["Today 02 AI matches"],
+      "record_count": 1,
+      "columns": ["date_", "total_ai_matches", "player_wins", "player_losses", "spend_amount_usd"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "02_AI_matches_weekly",
+      "metric_name": ["This week 02 AI matches"],
+      "record_count": 1,
+      "columns": ["week_label", "total_ai_matches", "player_wins", "player_losses", "spend_amount_usd"],
+      "order_by_column": "week_label",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "02_AI_matches_monthly",
+      "metric_name": ["This month 02 AI matches"],
+      "record_count": 1,
+      "columns": ["month_", "total_ai_matches", "player_wins", "player_losses", "spend_amount_usd"],
+      "order_by_column": "month_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "old_AI_matches_cumulative",
+      "metric_name": ["Total old AI matches"],
+      "record_count": 1,
+      "columns": ["date_", "total_ai_matches", "total_player_wins", "total_player_losses", "total_spent_in_usd"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "old_AI_matches_daily",
+      "metric_name": ["Today old AI matches"],
+      "record_count": 1,
+      "columns": ["match_date", "total_ai_matches", "total_player_wins", "total_player_losses", "total_spent_in_usd"],
+      "order_by_column": "match_date",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "old_AI_matches_weekly",
+      "metric_name": ["This week old AI matches"],
+      "record_count": 1,
+      "columns": ["year_", "week_number", "total_ai_matches", "total_player_wins", "total_player_losses", "total_spent_in_usd"],
+      "order_by_column": "week_number",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "old_AI_matches_monthly",
+      "metric_name": ["This month old AI matches"],
+      "record_count": 1,
+      "columns": ["year_", "month_number", "month_name", "total_ai_matches", "total_player_wins", "total_player_losses", "total_spent_in_usd"],
+      "order_by_column": "month_number",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "wallet_balance_cumulative",
+      "metric_name": ["Total wallet balances"],
+      "record_count": 1,
+      "columns": ["email", "first_name", "last_name", "date_", "total_balance", "total_hold", "available_balance"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "wallet_balance_daily",
+      "metric_name": ["Today wallet balances"],
+      "record_count": 1,
+      "columns": ["user_id", "email", "first_name", "last_name", "date_", "total_balance", "total_hold", "available_balance"],
+      "order_by_column": "date_",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "wallet_balance_weekly",
+      "metric_name": ["This week wallet balances"],
+      "record_count": 1,
+      "columns": ["user_id", "email", "first_name", "last_name", "year_", "week_number", "week_label", "total_balance", "total_hold", "available_balance"],
+      "order_by_column": "week_number",
+      "order_by": "desc"
+    },
+    {
+      "table_name": "wallet_balance_monthly",
+      "metric_name": ["This month wallet balances"],
+      "record_count": 1,
+      "columns": ["user_id", "email", "first_name", "last_name", "month_", "total_balance", "total_hold", "available_balance"],
+      "order_by_column": "month_",
+      "order_by": "desc"
+    }
+  ],
+  "Tables": [
+    {
+      "table_name": "wallet_balance_cumulative",
+      "metric_name": ["Top 50 Wallet Balance Holdersss"],
+      "record_count": 50,
+      "columns": ["email", "first_name", "last_name", "date_", "total_balance", "total_hold", "available_balance"],
+      "order_by_column": "total_balance",
+      "order_by": "desc",
+      "is_cumulative": 1,
+      "distinct_col": "email"
+    }
+  ],
+  "Charts": [
+    {
+      "table_name": "wallet_balance_cumulative",
+      "metric_name": ["Top 50 Wallet Balance Holdersss"],
+      "record_count": 50,
+      "columns": ["email", "first_name", "last_name", "date_", "total_balance", "total_hold", "available_balance"],
+      "order_by_column": "total_balance",
+      "order_by": "desc",
+      "is_cumulative": 1,
+      "distinct_col": "email",
+      "chart_type": "pie chart"
+    }
+  ]
+}
