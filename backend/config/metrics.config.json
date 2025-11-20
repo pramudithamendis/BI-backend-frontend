@@ -1,14 +1,6 @@
 {
   "Cards": [
     {
-      "table_name": "total_deposits_weekly",
-      "metric_name": ["This Week Deposits Amounts", "This Week Transactions"],
-      "record_count": 1,
-      "columns": ["week_start_date", "week_end_date", "total_completed_amount", "total_transactions"],
-      "order_by_column": "Week_Start_Date",
-      "order_by": "desc"
-    },
-    {
       "table_name": "total_users_daily",
       "metric_name": ["Today users"],
       "record_count": 1,
