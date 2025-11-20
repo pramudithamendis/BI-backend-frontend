@@ -34,7 +34,7 @@ export default function Charts() {
 
       <WalletBalanceChart data={walletData} />
       <GamePlayDaysChart data={gamePlayDays} />
-      <CommissionChart data={commissions} />
+      {/* <CommissionChart data={commissions} /> */}
     </div>
   );
 }
