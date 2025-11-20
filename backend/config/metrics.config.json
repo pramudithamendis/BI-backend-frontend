@@ -655,6 +655,16 @@
       "is_cumulative": 1,
       "distinct_col": "email",
       "chart_type": "pie chart"
+    },
+    {
+      "table_name": "total_game_plays_daily",
+      "metric_name": ["Top days of game plays"],
+      "record_count": 5,
+      "columns": ["date_", "total_sessions", "created_at"],
+      "order_by_column": "total_sessions",
+      "order_by": "desc",
+      "is_cumulative": 0,
+      "distinct_col": ""
     }
   ]
 }
