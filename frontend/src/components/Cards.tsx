@@ -10,6 +10,7 @@ interface MetricResult {
   metric_name: string[];
   field_names: string[];
   data: Record<string, any>[];
+  category: string[];
 }
 
 function formatValue(key: string, value: any) {
@@ -61,6 +62,7 @@ export default function UI() {
 
           const row = metric.data?.[0] || {};
 
+          const category = metric.category?.[0] || "Metric";
           return (
             <div className="card" key={i}>
               <div className="card-header">
