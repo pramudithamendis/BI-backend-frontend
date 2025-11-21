@@ -40,7 +40,7 @@ export default function Charts() {
 
               {type === "bar_chart" && <WalletBalanceChart data={data} />}
               {type === "line_chart" && <GamePlayDaysChart data={data} />}
-              {type === "donut_chart" && <CommissionChart data={data} />}
+              {type === "bar_chart2" && <CommissionChart data={data} />}
             </div>
           );
         })}
