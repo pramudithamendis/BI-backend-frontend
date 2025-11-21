@@ -53,8 +53,8 @@ export default function Charts() {
               <h2 className="chart-card-title">{table.metric_name || "Chart"}</h2>
 
               {type === "bar_chart" && <WalletBalanceChart data={getNeededCols(data, "email", "total_balance")} />}
-              {type === "line_chart" && <GamePlayDaysChart data={data} />}
               {type === "bar_chart2" && <WalletBalanceChart data={getNeededCols(data, "date_", "remainder_you_keep_32pct")} />}
+              {type === "line_chart" && <GamePlayDaysChart data={getNeededCols(data, "date_", "total_sessions")} />}
             </div>
           );
         })}
