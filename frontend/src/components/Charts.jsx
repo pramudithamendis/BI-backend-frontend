@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import WalletBalanceChart from "./miniComponents/WalletBalanceChart";
-import GamePlayDaysChart from "./miniComponents/GamePlayDaysChart";
-import CommissionChart from "./miniComponents/CommissionChart";
+import WalletBalanceChart from "./ChartminiComponents/WalletBalanceChart";
+import GamePlayDaysChart from "./ChartminiComponents/GamePlayDaysChart";
+import CommissionChart from "./ChartminiComponents/CommissionChart";
 
 export default function Charts() {
   const [tables, setTables] = useState([]);
