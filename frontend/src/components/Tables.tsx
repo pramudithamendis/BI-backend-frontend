@@ -43,9 +43,9 @@ export default function App() {
             <h2 className="text-xl font-semibold text-blue-400 mb-4">{metric.metric_name[0]}</h2>
 
             {/* Toggle SQL */}
-            <button onClick={() => toggleSQL(index)} className="mb-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded text-sm">
+            {/* <button onClick={() => toggleSQL(index)} className="mb-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded text-sm">
               {expanded[index] ? "Hide SQL" : "Show SQL"}
-            </button>
+            </button> */}
 
             {/* SQL Preview */}
             {expanded[index] && <pre className="bg-black/40 p-4 text-sm rounded-lg whitespace-pre-wrap overflow-x-auto mb-4">{metric.sql}</pre>}
