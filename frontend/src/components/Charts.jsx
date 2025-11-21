@@ -26,10 +26,17 @@ export default function Charts() {
   if (loading) return <h1 className="loading">Loading charts...</h1>;
 
   function getNeededCols(data, xaxis, yaxis) {
-    return data.map((row) => ({
-      name: row[xaxis] || "Unknown",
-      total: Number(row[yaxis]) || 0,
-    }));
+    if ((xaxis = "date_")) {
+      return data.map((row) => ({
+        _x: row["date_"].split("T")[0],
+        _y: Number(row[yaxis]) || 0,
+      }));
+    } else {
+      return data.map((row) => ({
+        _x: row[xaxis] || "Unknown",
+        _y: Number(row[yaxis]) || 0,
+      }));
+    }
   }
 
   return (
@@ -45,9 +52,9 @@ export default function Charts() {
             <div className="chart-card" key={index}>
               <h2 className="chart-card-title">{table.metric_name || "Chart"}</h2>
 
-              {type === "bar_chart" && <WalletBalanceChart data={getNeededCols(data, "first_name", "total_balance")} />}
+              {type === "bar_chart" && <WalletBalanceChart data={getNeededCols(data, "email", "total_balance")} />}
               {type === "line_chart" && <GamePlayDaysChart data={data} />}
-              {type === "bar_chart2" && <CommissionChart data={data} />}
+              {type === "bar_chart2" && <WalletBalanceChart data={getNeededCols(data, "date_", "remainder_you_keep_32pct")} />}
             </div>
           );
         })}
