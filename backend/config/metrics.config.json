@@ -331,7 +331,7 @@
     },
     {
       "table_name": "total_withdrawals_userwise_fiat_weekly",
-      "metric_name": ["This week withdrawal amount", "This week withdrawal transaction amount"],
+      "metric_name": ["This week withdrawal userwise amount", "This week withdrawal userwise transaction amount"],
       "record_count": 1,
       "columns": ["user_id", "email", "first_name", "last_name", "year", "week_number", "week_label", "total_completed_amount", "total_transactions"],
       "order_by_column": "week_number",
@@ -339,7 +339,7 @@
     },
     {
       "table_name": "total_withdrawals_userwise_fiat_monthly",
-      "metric_name": ["This month withdrawal amount", "This month withdrawal transaction amount"],
+      "metric_name": ["This month withdrawal userwise amount", "This month withdrawal userwise transaction amount"],
       "record_count": 1,
       "columns": ["user_id", "email", "first_name", "last_name", "month_", "total_completed_amount", "total_transactions"],
       "order_by_column": "month_",
@@ -347,7 +347,7 @@
     },
     {
       "table_name": "total_withdrawals_userwise_fiat_cumulative",
-      "metric_name": ["Total withdrawal amount", "Total withdrawal transaction amount"],
+      "metric_name": ["Total withdrawal userwise amount", "Total withdrawal userwise transaction amount"],
       "record_count": 1,
       "columns": ["date_", "user_id", "email", "first_name", "last_name", "total_completed_amount", "total_transactions"],
       "order_by_column": "date_",
