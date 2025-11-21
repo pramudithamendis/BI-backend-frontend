@@ -169,6 +169,7 @@ app.get("/api/charts", async (req, res) => {
 
         results.push({
           metric_name: card.metric_name,
+          chart_type: card.chart_type,
           sql,
           field_names: card.columns,
           data: rows,

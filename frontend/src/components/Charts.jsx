@@ -24,17 +24,32 @@ export default function Charts() {
 
   if (loading) return <h1 style={{ color: "white" }}>Loading charts...</h1>;
 
-  const walletData = tables[0]?.data ?? [];
-  const gamePlayDays = tables[1]?.data ?? [];
-  const commissions = tables[2]?.data ?? [];
-
   return (
-    <div style={{ padding: "30px", background: "#0f172a", minHeight: "100vh", color: "white" }}>
+    <div
+      style={{
+        padding: "30px",
+        background: "#0f172a",
+        minHeight: "100vh",
+        color: "white",
+      }}
+    >
       <h1 style={{ fontSize: 32, marginBottom: 20 }}>📊 Analytics Dashboard</h1>
 
-      <WalletBalanceChart data={walletData} />
-      <GamePlayDaysChart data={gamePlayDays} />
-      {/* <CommissionChart data={commissions} /> */}
+      {/* 🔥 LOOP THROUGH ALL TABLES AND RENDER THE CORRECT CHART */}
+      {tables.map((table, index) => {
+        const type = table.chart_type;
+        const data = table.data ?? [];
+
+        if (type === "bar_chart") {
+          return <WalletBalanceChart key={index} data={data} />;
+        }
+
+        if (type === "line_chart") {
+          return <GamePlayDaysChart key={index} data={data} />;
+        }
+
+        return null; // fallback
+      })}
     </div>
   );
 }
