@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import WalletBalanceChart from "./ChartminiComponents/WalletBalanceChart";
 import GamePlayDaysChart from "./ChartminiComponents/GamePlayDaysChart";
-import CommissionChart from "./ChartminiComponents/other/CommissionChart";
+import CommissionChart from "./ChartminiComponents/CommissionChart";
 import "./Charts.css";
 
 export default function Charts() {
