@@ -1,9 +1,12 @@
-.app-root {
-  padding: 20px;
+.dashboard-root {
+  padding: 50px;
   font-family: Inter, sans-serif;
   color: #fff;
   background: #0b0f1a;
   min-height: 100vh;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .title {
@@ -18,19 +21,23 @@
 
 /* Grid */
 .cards-grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;   /* ✅ Wrap to next line */
   gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  justify-content: flex-start; /* Align items from left */
 }
 
-/* Cards */
+
 .card {
   background: #131b2e;
   padding: 20px;
   border-radius: 12px;
   border: 1px solid #23304e;
+  min-width: 320px;           /* 🔥 Keeps card size stable */
+  flex: 1 1 320px;            /* 🔥 Allows flexible wrapping */
   box-shadow: 0 0 20px rgba(0, 180, 255, 0.15);
 }
+
 
 .card-title {
   font-size: 20px;

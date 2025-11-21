@@ -51,7 +51,7 @@ export default function UI() {
   if (loading) return <div className="loading">Loading dashboard...</div>;
 
   return (
-    <div className="dashboard-root">
+    <div>
       <h1 className="dashboard-title">Dashboard</h1>
 
       <div className="cards-grid">
