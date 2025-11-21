@@ -3,8 +3,6 @@ import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianG
 export default function GamePlayDaysChart({ data }) {
   return (
     <div style={{ marginBottom: 50 }}>
-      <h2 style={{ marginBottom: 10 }}>🎮 Top Days of Game Plays</h2>
-
       <ResponsiveContainer width="100%" height={350}>
         <LineChart data={data}>
           <CartesianGrid strokeDasharray="3 3" stroke="#334155" />

@@ -5,13 +5,11 @@ export default function WalletBalanceChart({ data }) {
   //   name: item.first_name || "Unknown",
   //   total: item.total_balance,
   // }));
-  console.log("data",data);
+  console.log("data", data);
 
   // console.log(data);
   return (
     <div style={{ marginBottom: 50 }}>
-      <h2 style={{ marginBottom: 10 }}>💰 Top 50 Wallet Balance Holders</h2>
-
       <ResponsiveContainer width="100%" height={400}>
         <BarChart data={data}>
           <CartesianGrid strokeDasharray="3 3" stroke="#334155" />

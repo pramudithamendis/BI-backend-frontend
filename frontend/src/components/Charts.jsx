@@ -48,13 +48,15 @@ export default function Charts() {
           const type = table.chart_type;
           const data = table.data ?? [];
 
-          return (
-            <div className="chart-card" key={index}>
-              <h2 className="chart-card-title">{table.metric_name || "Chart"}</h2>
+          return ( 
+            <div>
+              <div className="chart-card" key={index}>
+                <h2 className="chart-card-title">{table.metric_name || "Chart"}</h2>
 
-              {type === "bar_chart" && <WalletBalanceChart data={getNeededCols(data, "email", "total_balance")} />}
-              {type === "bar_chart" && <WalletBalanceChart data={getNeededCols(data, "date_", "remainder_you_keep_32pct")} />}
-              {type === "line_chart" && <GamePlayDaysChart data={getNeededCols(data, "date_", "total_sessions")} />}
+                {type === "bar_chart" && <WalletBalanceChart data={getNeededCols(data, "email", "total_balance")} />}
+                {type === "bar_chart" && <WalletBalanceChart data={getNeededCols(data, "date_", "remainder_you_keep_32pct")} />}
+                {type === "line_chart" && <GamePlayDaysChart data={getNeededCols(data, "date_", "total_sessions")} />}
+              </div>
             </div>
           );
         })}
