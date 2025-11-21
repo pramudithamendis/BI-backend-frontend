@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+body {
+  background: linear-gradient(145deg, #0d1326, #0a0f1c);
+  font-family: Inter, sans-serif;
+}
+
+/* PAGE ROOT */
+.charts-root {
+  padding: 40px;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.charts-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #e7ecff;
+}
+
+/* GRID */
+.charts-grid {
+  display: flex;
+  grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+  gap: 30px;
+  align-items: flex-start;
+  flex-wrap: wrap; /* ✅ Wrap to next line */
+  gap: 20px;
+}
+
+/* CARD */
+.chart-card {
+  background: rgba(22, 28, 52, 0.9);
+  border-radius: 20px;
+  padding: 25px;
+  border: 1px solid rgba(90, 110, 150, 0.35);
+  box-shadow: 0 0 35px rgba(0, 150, 255, 0.15);
+  backdrop-filter: blur(6px);
+
+  transition: all 0.25s ease;
+}
+
+.chart-card:hover {
+  box-shadow: 0px 0px 55px rgba(0, 150, 255, 0.25);
+  transform: translateY(-6px);
+}
+
+.chart-card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #d6e1ff;
+  margin-bottom: 15px;
+}
+
+/* CHART CANVAS container */
+.chart-card canvas {
+  background: transparent !important;
+}
+
+/* LOADING */
+.loading {
+  color: #99c2ff;
+  margin: 50px;
+  font-size: 24px;
+  text-align: center;
+}

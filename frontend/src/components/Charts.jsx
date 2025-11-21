@@ -3,6 +3,7 @@ import axios from "axios";
 import WalletBalanceChart from "./ChartminiComponents/WalletBalanceChart";
 import GamePlayDaysChart from "./ChartminiComponents/GamePlayDaysChart";
 import CommissionChart from "./ChartminiComponents/CommissionChart";
+import "./Charts.css";
 
 export default function Charts() {
   const [tables, setTables] = useState([]);
@@ -14,7 +15,7 @@ export default function Charts() {
         const res = await axios.get("http://localhost:3000/api/charts");
         setTables(res.data.results);
       } catch (err) {
-        console.error(err);
+        console.error("Failed fetching charts:", err);
       } finally {
         setLoading(false);
       }
@@ -22,34 +23,28 @@ export default function Charts() {
     fetchTables();
   }, []);
 
-  if (loading) return <h1 style={{ color: "white" }}>Loading charts...</h1>;
+  if (loading) return <h1 className="loading">Loading charts...</h1>;
 
   return (
-    <div
-      style={{
-        padding: "30px",
-        background: "#0f172a",
-        minHeight: "100vh",
-        color: "white",
-      }}
-    >
-      <h1 style={{ fontSize: 32, marginBottom: 20 }}>📊 Analytics Dashboard</h1>
+    <div className="charts-root">
+      <h1 className="charts-title">Analytics Dashboard</h1>
 
-      {/* 🔥 LOOP THROUGH ALL TABLES AND RENDER THE CORRECT CHART */}
-      {tables.map((table, index) => {
-        const type = table.chart_type;
-        const data = table.data ?? [];
+      <div className="charts-grid">
+        {tables.map((table, index) => {
+          const type = table.chart_type;
+          const data = table.data ?? [];
 
-        if (type === "bar_chart") {
-          return <WalletBalanceChart key={index} data={data} />;
-        }
+          return (
+            <div className="chart-card" key={index}>
+              <h2 className="chart-card-title">{table.metric_name || "Chart"}</h2>
 
-        if (type === "line_chart") {
-          return <GamePlayDaysChart key={index} data={data} />;
-        }
-
-        return null; // fallback
-      })}
+              {type === "bar_chart" && <WalletBalanceChart data={data} />}
+              {type === "line_chart" && <GamePlayDaysChart data={data} />}
+              {type === "donut_chart" && <CommissionChart data={data} />}
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
