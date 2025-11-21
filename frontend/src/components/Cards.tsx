@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import "./Cards.css";
 
 interface ApiResponse {
@@ -34,46 +34,78 @@ function formatValue(key: string, value: any) {
 export default function UI() {
   const [metrics, setMetrics] = useState<MetricResult[]>([]);
   const [loading, setLoading] = useState(true);
+  const [selectedCategory, setSelectedCategory] = useState("all");
 
+  // ---------- useEffect (runs once)
   useEffect(() => {
     async function load() {
       try {
         const res = await fetch("http://localhost:3000/api/cards");
         const json: ApiResponse = await res.json();
         setMetrics(json.results || []);
-      } catch (e) {
-        console.error(e);
+      } catch (err) {
+        console.error(err);
+      } finally {
+        setLoading(false);
       }
-      setLoading(false);
     }
     load();
   }, []);
 
-  if (loading) return <div className="loading">Loading dashboard...</div>;
+  // ---------- Always compute categories (never inside if)
+  const categories = useMemo(() => {
+    if (!metrics || metrics.length === 0) return ["all"];
+
+    const all = metrics.flatMap((m) => m.category || []);
+    return ["all", ...Array.from(new Set(all))];
+  }, [metrics]);
+
+  // ---------- Always compute filtered metrics (never inside if)
+  const filteredMetrics = useMemo(() => {
+    if (selectedCategory === "all") return metrics;
+    return metrics.filter((m) => (m.category || []).includes(selectedCategory));
+  }, [metrics, selectedCategory]);
+
+  // ---------- Render phase (safe)
+  if (loading) {
+    return <div className="loading">Loading dashboard...</div>;
+  }
 
   return (
     <div>
       <h1 className="dashboard-title">Dashboard</h1>
 
+      {/* Category Filter */}
+      <div className="filter-bar">
+        <label>Filter by Category: </label>
+        <select value={selectedCategory} onChange={(e) => setSelectedCategory(e.target.value)}>
+          {categories.map((c) => (
+            <option key={c} value={c}>
+              {c}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      {/* Cards */}
       <div className="cards-grid">
-        {metrics.map((metric, i) => {
+        {filteredMetrics.map((metric, i) => {
           const title = metric.metric_name?.[0] || "Metric";
           const subtitle = metric.metric_name?.slice(1).join(" • ");
-
           const row = metric.data?.[0] || {};
 
-          const category = metric.category?.[0] || "Metric";
           return (
             <div className="card" key={i}>
               <div className="card-header">
                 <p className="card-title">{title}</p>
                 {subtitle && <p className="card-subtitle">{subtitle}</p>}
+                <p>Category: {metric.category || []}</p>
               </div>
 
               <div className="card-body">
                 {metric.field_names.map((field) => (
                   <div className="field-row" key={field}>
-                    <span className="field-label">{field}</span>
+                    <span className="field-label">{field}:</span>
                     <span className="field-value">{formatValue(field, row[field])}</span>
                   </div>
                 ))}

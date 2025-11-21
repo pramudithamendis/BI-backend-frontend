@@ -6,7 +6,8 @@
       "record_count": 1,
       "columns": ["date", "value"],
       "order_by_column": "date",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "users"
     },
     {
       "table_name": "total_users_weekly",
@@ -14,7 +15,8 @@
       "record_count": 1,
       "columns": ["week", "value"],
       "order_by_column": "week",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "users"
     },
     {
       "table_name": "total_users_monthly",
@@ -22,7 +24,8 @@
       "record_count": 1,
       "columns": ["month", "value"],
       "order_by_column": "month",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "users"
     },
     {
       "table_name": "total_users_cumulative",
@@ -30,7 +33,8 @@
       "record_count": 1,
       "columns": ["date", "value"],
       "order_by_column": "date",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "users"
     },
     {
       "table_name": "total_deposits_daily",
@@ -38,7 +42,8 @@
       "record_count": 1,
       "columns": ["date_", "total_completed_amount", "total_transactions"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "deposits"
     },
     {
       "table_name": "total_deposits_weekly",
@@ -46,7 +51,8 @@
       "record_count": 1,
       "columns": ["week_start_date", "week_end_date", "total_completed_amount", "total_transactions"],
       "order_by_column": "week_start_date",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "deposits"
     },
     {
       "table_name": "total_deposits_monthly",
@@ -54,7 +60,8 @@
       "record_count": 1,
       "columns": ["month_", "total_completed_amount", "total_transactions"],
       "order_by_column": "month_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "deposits"
     },
     {
       "table_name": "total_deposits_cumulative",
@@ -62,7 +69,8 @@
       "record_count": 1,
       "columns": ["date_", "total_completed_amount", "total_transactions"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "deposits"
     },
     {
       "table_name": "total_deposits_fiat_daily",
@@ -70,7 +78,8 @@
       "record_count": 1,
       "columns": ["date_", "total_completed_amount", "total_transactions"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "deposits"
     },
     {
       "table_name": "total_deposits_fiat_weekly",
@@ -78,7 +87,8 @@
       "record_count": 1,
       "columns": ["year_week", "week_start_date", "week_end_date", "total_completed_amount", "total_transactions"],
       "order_by_column": "year_week",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "deposits"
     },
     {
       "table_name": "total_deposits_fiat_monthly",
@@ -86,7 +96,8 @@
       "record_count": 1,
       "columns": ["month_", "total_completed_amount", "total_transactions"],
       "order_by_column": "month_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "deposits"
     },
     {
       "table_name": "total_deposits_fiat_cumulative",
@@ -94,7 +105,8 @@
       "record_count": 1,
       "columns": ["date_", "total_completed_amount", "total_transactions"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "deposits"
     },
     {
       "table_name": "total_deposits_crypto_daily",
@@ -102,7 +114,8 @@
       "record_count": 1,
       "columns": ["date_", "total_completed_amount", "total_transactions"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "deposits"
     },
     {
       "table_name": "total_deposits_crypto_weekly",
@@ -110,7 +123,8 @@
       "record_count": 1,
       "columns": ["year_week", "week_start_date", "week_end_date", "total_completed_amount", "total_transactions"],
       "order_by_column": "year_week",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "deposits"
     },
     {
       "table_name": "total_deposits_crypto_monthly",
@@ -118,7 +132,8 @@
       "record_count": 1,
       "columns": ["month_", "total_completed_amount", "total_transactions"],
       "order_by_column": "month_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "deposits"
     },
     {
       "table_name": "total_deposits_crypto_cumulative",
@@ -126,7 +141,8 @@
       "record_count": 1,
       "columns": ["date_", "total_completed_amount", "total_transactions"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "deposits"
     },
     {
       "table_name": "total_deposits_userwise_fiat_daily",
@@ -134,7 +150,8 @@
       "record_count": 1,
       "columns": ["user_id", "email", "first_name", "last_name", "date_", "total_completed_amount", "total_transactions"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "deposits"
     },
     {
       "table_name": "total_deposits_userwise_fiat_weekly",
@@ -142,7 +159,8 @@
       "record_count": 1,
       "columns": ["user_id", "email", "first_name", "last_name", "year", "week_number", "week_label", "total_completed_amount", "total_transactions"],
       "order_by_column": "week_number",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "deposits"
     },
     {
       "table_name": "total_deposits_userwise_fiat_monthly",
@@ -150,7 +168,8 @@
       "record_count": 1,
       "columns": ["user_id", "email", "first_name", "last_name", "month_", "total_completed_amount", "total_transactions"],
       "order_by_column": "month_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "deposits"
     },
     {
       "table_name": "total_deposits_userwise_fiat_cumulative",
@@ -158,7 +177,8 @@
       "record_count": 1,
       "columns": ["date_", "user_id", "email", "first_name", "last_name", "total_completed_amount", "total_transactions"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "deposits"
     },
     {
       "table_name": "total_deposits_userwise_crypto_daily",
@@ -166,7 +186,8 @@
       "record_count": 1,
       "columns": ["user_id", "email", "first_name", "last_name", "date_", "total_completed_amount", "total_transactions"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "deposits"
     },
     {
       "table_name": "total_deposits_userwise_crypto_weekly",
@@ -174,7 +195,8 @@
       "record_count": 1,
       "columns": ["user_id", "email", "first_name", "last_name", "year", "week_number", "week_label", "total_completed_amount", "total_transactions"],
       "order_by_column": "week_number",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "deposits"
     },
     {
       "table_name": "total_deposits_userwise_crypto_monthly",
@@ -182,7 +204,8 @@
       "record_count": 1,
       "columns": ["user_id", "email", "first_name", "last_name", "month_", "total_completed_amount", "total_transactions"],
       "order_by_column": "month_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "deposits"
     },
     {
       "table_name": "total_deposits_userwise_crypto_cumulative",
@@ -190,7 +213,8 @@
       "record_count": 1,
       "columns": ["user_id", "email", "first_name", "last_name", "total_completed_amount", "total_transactions"],
       "order_by_column": "user_id",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "deposits"
     },
     {
       "table_name": "total_deposits_userwise_daily",
@@ -198,7 +222,8 @@
       "record_count": 1,
       "columns": ["user_id", "email", "first_name", "last_name", "date_", "total_completed_amount", "total_transactions"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "deposits"
     },
     {
       "table_name": "total_deposits_userwise_weekly",
@@ -206,7 +231,8 @@
       "record_count": 1,
       "columns": ["user_id", "email", "first_name", "last_name", "year", "week_number", "week_label", "total_completed_amount", "total_transactions"],
       "order_by_column": "week_number",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "deposits"
     },
     {
       "table_name": "total_deposits_userwise_monthly",
@@ -214,7 +240,8 @@
       "record_count": 1,
       "columns": ["user_id", "email", "first_name", "last_name", "month_", "total_completed_amount", "total_transactions"],
       "order_by_column": "month_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "deposits"
     },
     {
       "table_name": "total_deposits_both_total_userwise",
@@ -222,7 +249,8 @@
       "record_count": 1,
       "columns": ["user_id", "email", "first_name", "last_name", "total_completed_amount", "total_transactions"],
       "order_by_column": "user_id",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "deposits"
     },
 
     {
@@ -231,7 +259,8 @@
       "record_count": 1,
       "columns": ["date_", "total_completed_amount", "total_transactions"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "widthdrawals"
     },
     {
       "table_name": "total_withdrawal_fiat_weekly",
@@ -239,7 +268,8 @@
       "record_count": 1,
       "columns": ["year_week", "week_start_date", "week_end_date", "total_completed_amount", "total_transactions"],
       "order_by_column": "year_week",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "widthdrawals"
     },
     {
       "table_name": "total_withdrawal_fiat_monthly",
@@ -247,7 +277,8 @@
       "record_count": 1,
       "columns": ["month_", "total_completed_amount", "total_transactions"],
       "order_by_column": "month_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "widthdrawals"
     },
     {
       "table_name": "total_withdrawal_fiat_cumulative",
@@ -255,7 +286,8 @@
       "record_count": 1,
       "columns": ["date_", "total_completed_amount", "total_transactions"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "widthdrawals"
     },
     {
       "table_name": "total_withdrawal_crypto_daily",
@@ -263,7 +295,8 @@
       "record_count": 1,
       "columns": ["date_", "total_completed_amount", "total_transactions"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "widthdrawals"
     },
     {
       "table_name": "total_withdrawal_crypto_weekly",
@@ -271,7 +304,8 @@
       "record_count": 1,
       "columns": ["year_week", "week_start_date", "week_end_date", "total_completed_amount", "total_transactions"],
       "order_by_column": "year_week",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "widthdrawals"
     },
     {
       "table_name": "total_withdrawal_crypto_monthly",
@@ -279,7 +313,8 @@
       "record_count": 1,
       "columns": ["month_", "total_completed_amount", "total_transactions"],
       "order_by_column": "month_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "widthdrawals"
     },
     {
       "table_name": "total_withdrawal_crypto_cumulative",
@@ -287,7 +322,8 @@
       "record_count": 1,
       "columns": ["date_", "total_completed_amount", "total_transactions"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "widthdrawals"
     },
     {
       "table_name": "total_withdrawals_daily",
@@ -295,7 +331,8 @@
       "record_count": 1,
       "columns": ["date_", "total_completed_amount", "total_transactions"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "widthdrawals"
     },
     {
       "table_name": "total_withdrawals_weekly",
@@ -303,7 +340,8 @@
       "record_count": 1,
       "columns": ["year_week", "week_start_date", "week_end_date", "total_completed_amount", "total_transactions"],
       "order_by_column": "year_week",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "widthdrawals"
     },
     {
       "table_name": "total_withdrawals_monthly",
@@ -311,7 +349,8 @@
       "record_count": 1,
       "columns": ["month_", "total_completed_amount", "total_transactions"],
       "order_by_column": "month_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "widthdrawals"
     },
     {
       "table_name": "total_withdrawals_cumulative",
@@ -319,7 +358,8 @@
       "record_count": 1,
       "columns": ["date_", "total_completed_amount", "total_transactions"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "widthdrawals"
     },
     {
       "table_name": "total_withdrawals_userwise_fiat_daily",
@@ -327,7 +367,8 @@
       "record_count": 1,
       "columns": ["user_id", "email", "first_name", "last_name", "date_", "total_completed_amount", "total_transactions"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "widthdrawals"
     },
     {
       "table_name": "total_withdrawals_userwise_fiat_weekly",
@@ -335,7 +376,8 @@
       "record_count": 1,
       "columns": ["user_id", "email", "first_name", "last_name", "year", "week_number", "week_label", "total_completed_amount", "total_transactions"],
       "order_by_column": "week_number",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "widthdrawals"
     },
     {
       "table_name": "total_withdrawals_userwise_fiat_monthly",
@@ -343,7 +385,8 @@
       "record_count": 1,
       "columns": ["user_id", "email", "first_name", "last_name", "month_", "total_completed_amount", "total_transactions"],
       "order_by_column": "month_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "widthdrawals"
     },
     {
       "table_name": "total_withdrawals_userwise_fiat_cumulative",
@@ -351,7 +394,8 @@
       "record_count": 1,
       "columns": ["date_", "user_id", "email", "first_name", "last_name", "total_completed_amount", "total_transactions"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "widthdrawals"
     },
     {
       "table_name": "total_withdrawals_userwise_crypto_daily",
@@ -359,7 +403,8 @@
       "record_count": 1,
       "columns": ["user_id", "email", "first_name", "last_name", "date_", "total_completed_amount", "total_transactions"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "widthdrawals"
     },
     {
       "table_name": "total_withdrawals_userwise_crypto_weekly",
@@ -367,7 +412,8 @@
       "record_count": 1,
       "columns": ["user_id", "email", "first_name", "last_name", "year", "week_number", "week_label", "total_completed_amount", "total_transactions"],
       "order_by_column": "week_number",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "widthdrawals"
     },
     {
       "table_name": "total_withdrawals_userwise_crypto_monthly",
@@ -375,7 +421,8 @@
       "record_count": 1,
       "columns": ["user_id", "email", "first_name", "last_name", "month_", "total_completed_amount", "total_transactions"],
       "order_by_column": "month_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "widthdrawals"
     },
     {
       "table_name": "total_withdrawals_userwise_crypto_cumulative",
@@ -383,7 +430,8 @@
       "record_count": 1,
       "columns": ["date_", "user_id", "email", "first_name", "last_name", "total_completed_amount", "total_transactions"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "widthdrawals"
     },
 
     {
@@ -392,7 +440,8 @@
       "record_count": 1,
       "columns": ["user_id", "email", "first_name", "last_name", "date_", "total_completed_amount", "total_transactions"],
       "order_by_column": "user_id",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "widthdrawals"
     },
     {
       "table_name": "total_withdrawals_userwise_weekly",
@@ -400,7 +449,8 @@
       "record_count": 1,
       "columns": ["user_id", "email", "first_name", "last_name", "year", "week_number", "week_label", "total_completed_amount", "total_transactions"],
       "order_by_column": "week_number",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "widthdrawals"
     },
     {
       "table_name": "total_withdrawals_userwise_monthly",
@@ -408,7 +458,8 @@
       "record_count": 1,
       "columns": ["user_id", "email", "first_name", "last_name", "month_", "total_completed_amount", "total_transactions"],
       "order_by_column": "month_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "widthdrawals"
     },
     {
       "table_name": "total_withdrawals_userwise_cumulative",
@@ -416,7 +467,8 @@
       "record_count": 1,
       "columns": ["date_", "user_id", "email", "first_name", "last_name", "total_completed_amount", "total_transactions"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "widthdrawals"
     },
     {
       "table_name": "total_game_plays_daily",
@@ -424,7 +476,8 @@
       "record_count": 1,
       "columns": ["date_", "total_sessions"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "game plays"
     },
     {
       "table_name": "total_game_plays_weekly",
@@ -432,7 +485,8 @@
       "record_count": 1,
       "columns": ["week_start", "week_end", "total_sessions"],
       "order_by_column": "week_start",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "game plays"
     },
     {
       "table_name": "total_game_plays_monthly",
@@ -440,7 +494,8 @@
       "record_count": 1,
       "columns": ["month_", "total_sessions"],
       "order_by_column": "month_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "game plays"
     },
     {
       "table_name": "total_game_plays_cumulative",
@@ -448,7 +503,8 @@
       "record_count": 1,
       "columns": ["date_", "total_sessions"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "game plays"
     },
 
     {
@@ -457,7 +513,8 @@
       "record_count": 1,
       "columns": ["date_", "total_sessions"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "other"
     },
     {
       "table_name": "total_game_plays_without_AI_and_Train_With_AI_daily",
@@ -465,7 +522,8 @@
       "record_count": 1,
       "columns": ["session_date", "total_sessions"],
       "order_by_column": "session_date",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "other"
     },
     {
       "table_name": "total_game_play_pool_amount_cumulative",
@@ -473,7 +531,8 @@
       "record_count": 1,
       "columns": ["date_", "coin_bet_amount", "total_sessions"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "game play pool amount"
     },
     {
       "table_name": "total_game_play_pool_amount_daily",
@@ -481,7 +540,8 @@
       "record_count": 1,
       "columns": ["date_", "coin_bet_amount", "total_sessions"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "game play pool amount"
     },
     {
       "table_name": "total_game_play_comission_cumulative",
@@ -489,7 +549,8 @@
       "record_count": 1,
       "columns": ["date_", "summary_date", "base_amount_100pct", "developer_share_50pct", "tax_18pct", "remainder_you_keep_32pct"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "game play comission"
     },
     {
       "table_name": "total_game_play_comission_daily",
@@ -497,7 +558,8 @@
       "record_count": 1,
       "columns": ["date_", "base_amount_100pct", "developer_share_50pct", "tax_18pct", "remainder_you_keep_32pct"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "game play comission"
     },
     {
       "table_name": "total_game_play_comission_weekly",
@@ -505,7 +567,8 @@
       "record_count": 1,
       "columns": ["year_week", "week_start_date", "week_end_date", "base_amount_100pct", "developer_share_50pct", "tax_18pct", "remainder_you_keep_32pct"],
       "order_by_column": "year_week",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "game play comission"
     },
     {
       "table_name": "total_game_play_comission_monthly",
@@ -513,7 +576,8 @@
       "record_count": 1,
       "columns": ["month_", "base_amount_100pct", "developer_share_50pct", "tax_18pct", "remainder_you_keep_32pct"],
       "order_by_column": "month_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "game play comission"
     },
     {
       "table_name": "02_AI_matches_cumulative",
@@ -521,7 +585,8 @@
       "record_count": 1,
       "columns": ["date_", "total_ai_matches", "player_wins", "player_losses", "spend_amount_usd", "report_date"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "02 AI matches"
     },
     {
       "table_name": "02_AI_matches_daily",
@@ -529,7 +594,8 @@
       "record_count": 1,
       "columns": ["date_", "total_ai_matches", "player_wins", "player_losses", "spend_amount_usd"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "02 AI matches"
     },
     {
       "table_name": "02_AI_matches_weekly",
@@ -537,7 +603,8 @@
       "record_count": 1,
       "columns": ["week_label", "total_ai_matches", "player_wins", "player_losses", "spend_amount_usd"],
       "order_by_column": "week_label",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "02 AI matches"
     },
     {
       "table_name": "02_AI_matches_monthly",
@@ -545,7 +612,8 @@
       "record_count": 1,
       "columns": ["month_", "total_ai_matches", "player_wins", "player_losses", "spend_amount_usd"],
       "order_by_column": "month_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "02 AI matches"
     },
     {
       "table_name": "old_AI_matches_cumulative",
@@ -553,7 +621,8 @@
       "record_count": 1,
       "columns": ["date_", "total_ai_matches", "total_player_wins", "total_player_losses", "total_spent_in_usd"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "old AI matches"
     },
     {
       "table_name": "old_AI_matches_daily",
@@ -561,7 +630,8 @@
       "record_count": 1,
       "columns": ["match_date", "total_ai_matches", "total_player_wins", "total_player_losses", "total_spent_in_usd"],
       "order_by_column": "match_date",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "old AI matches"
     },
     {
       "table_name": "old_AI_matches_weekly",
@@ -569,7 +639,8 @@
       "record_count": 1,
       "columns": ["year_", "week_number", "total_ai_matches", "total_player_wins", "total_player_losses", "total_spent_in_usd"],
       "order_by_column": "week_number",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "old AI matches"
     },
     {
       "table_name": "old_AI_matches_monthly",
@@ -577,7 +648,8 @@
       "record_count": 1,
       "columns": ["year_", "month_number", "month_name", "total_ai_matches", "total_player_wins", "total_player_losses", "total_spent_in_usd"],
       "order_by_column": "month_number",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "old AI matches"
     },
     {
       "table_name": "wallet_balance_cumulative",
@@ -585,7 +657,8 @@
       "record_count": 1,
       "columns": ["email", "first_name", "last_name", "date_", "total_balance", "total_hold", "available_balance"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "wallet balance"
     },
     {
       "table_name": "wallet_balance_daily",
@@ -593,7 +666,8 @@
       "record_count": 1,
       "columns": ["user_id", "email", "first_name", "last_name", "date_", "total_balance", "total_hold", "available_balance"],
       "order_by_column": "date_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "wallet balance"
     },
     {
       "table_name": "wallet_balance_weekly",
@@ -601,7 +675,8 @@
       "record_count": 1,
       "columns": ["user_id", "email", "first_name", "last_name", "year_", "week_number", "week_label", "total_balance", "total_hold", "available_balance"],
       "order_by_column": "week_number",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "wallet balance"
     },
     {
       "table_name": "wallet_balance_monthly",
@@ -609,7 +684,8 @@
       "record_count": 1,
       "columns": ["user_id", "email", "first_name", "last_name", "month_", "total_balance", "total_hold", "available_balance"],
       "order_by_column": "month_",
-      "order_by": "desc"
+      "order_by": "desc",
+      "category": "wallet balance"
     }
   ],
   "Tables": [

@@ -22,22 +22,20 @@
 /* Grid */
 .cards-grid {
   display: flex;
-  flex-wrap: wrap;   /* ✅ Wrap to next line */
+  flex-wrap: wrap; /* ✅ Wrap to next line */
   gap: 20px;
-  justify-content: flex-start; /* Align items from left */
+  align-items: start;
 }
-
 
 .card {
   background: #131b2e;
   padding: 20px;
   border-radius: 12px;
   border: 1px solid #23304e;
-  min-width: 320px;           /* 🔥 Keeps card size stable */
-  flex: 1 1 320px;            /* 🔥 Allows flexible wrapping */
+  min-width: 320px; /* 🔥 Keeps card size stable */
+  flex: 1 1 320px; /* 🔥 Allows flexible wrapping */
   box-shadow: 0 0 20px rgba(0, 180, 255, 0.15);
 }
-
 
 .card-title {
   font-size: 20px;

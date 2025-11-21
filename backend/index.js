@@ -49,6 +49,7 @@ app.get("/api/cards", async (req, res) => {
           sql,
           field_names: card.columns,
           data: rows,
+          category: card.category,
         });
       }
     } else {
@@ -64,6 +65,7 @@ app.get("/api/cards", async (req, res) => {
             sql,
             field_names: card.columns,
             data: rows,
+            category: card.category,
           });
         }
       }
