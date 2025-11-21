@@ -20,9 +20,12 @@ body {
 
 /* GRID */
 .dashboard-grid {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
   gap: 30px;
+  align-items: flex-start;
+  flex-wrap: wrap; /* ✅ Wrap to next line */
+  gap: 20px;
 }
 
 /* CARD */
@@ -88,7 +91,6 @@ body {
   overflow: hidden;
 }
 
-
 .metric-table {
   width: 100%;
   border-collapse: collapse;
@@ -96,7 +98,6 @@ body {
   font-size: 14px;
   word-wrap: break-word; /* <-- Allows long text to wrap instead of overflowing */
 }
-
 
 .metric-table thead tr {
   background: rgba(255, 255, 255, 0.05);
