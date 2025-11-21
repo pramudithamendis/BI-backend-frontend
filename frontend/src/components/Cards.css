@@ -1,0 +1,75 @@
+.app-root {
+  padding: 20px;
+  font-family: Inter, sans-serif;
+  color: #fff;
+  background: #0b0f1a;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.subtitle {
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+/* Grid */
+.cards-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+/* Cards */
+.card {
+  background: #131b2e;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #23304e;
+  box-shadow: 0 0 20px rgba(0, 180, 255, 0.15);
+}
+
+.card-title {
+  font-size: 20px;
+  margin: 0;
+}
+
+.card-subtitle {
+  opacity: 0.6;
+  margin: 0;
+}
+
+/* Field list */
+.field-list {
+  margin-top: 12px;
+}
+
+.field-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #23304e;
+}
+
+.field-label {
+  opacity: 0.7;
+}
+
+.field-value {
+  font-weight: 600;
+}
+
+.error-box {
+  padding: 15px;
+  background: #320000;
+  border: 1px solid #ff4d4d;
+  border-radius: 8px;
+  color: #ffb3b3;
+}
+
+.allCards{
+    display: flex;
+}
