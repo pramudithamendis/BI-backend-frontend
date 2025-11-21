@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./Tables.css";
 
 interface MetricResult {
   metric_name: string[];
@@ -21,7 +22,6 @@ export default function App() {
         console.error("Failed to fetch data:", err);
       }
     }
-
     loadData();
   }, []);
 
@@ -33,26 +33,20 @@ export default function App() {
   };
 
   return (
-    <div>
-      <h1>Gameon BI Metrics Dashboard</h1>
+    <div className="dashboard-root">
+      <h1 className="dashboard-title">Gameon BI Metrics Dashboard</h1>
 
-      <div>
+      <div className="dashboard-grid">
         {tables.map((metric, index) => (
-          <div key={index}>
-            {/* Metric Title */}
-            <h2>{metric.metric_name[0]}</h2>
+          <div className="metric-card" key={index}>
+            <div className="metric-header">
+              <h2 className="metric-title">{metric.metric_name[0]}</h2>
+            </div>
 
-            {/* Toggle SQL */}
-            {/* <button onClick={() => toggleSQL(index)} className="mb-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded text-sm">
-              {expanded[index] ? "Hide SQL" : "Show SQL"}
-            </button> */}
+            {expanded[index] && <pre className="sql-box">{metric.sql}</pre>}
 
-            {/* SQL Preview */}
-            {expanded[index] && <pre>{metric.sql}</pre>}
-
-            {/* Dynamic Table */}
-            <div>
-              <table>
+            <div className="table-wrapper">
+              <table className="metric-table">
                 <thead>
                   <tr>
                     {metric.field_names.map((field) => (
@@ -62,8 +56,8 @@ export default function App() {
                 </thead>
 
                 <tbody>
-                  {metric.data.map((row, i) => (
-                    <tr key={i}>
+                  {metric.data.map((row, rowIndex) => (
+                    <tr key={rowIndex}>
                       {metric.field_names.map((field) => (
                         <td key={field}>{String(row[field] ?? "")}</td>
                       ))}
