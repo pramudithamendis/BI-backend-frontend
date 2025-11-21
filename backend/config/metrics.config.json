@@ -752,7 +752,7 @@
       "order_by": "desc",
       "is_cumulative": 0,
       "distinct_col": "",
-      "chart_type": "bar_chart2"
+      "chart_type": "bar_chart"
     }
   ]
 }
