@@ -25,6 +25,13 @@ export default function Charts() {
 
   if (loading) return <h1 className="loading">Loading charts...</h1>;
 
+  function getNeededCols(data, xaxis, yaxis) {
+    return data.map((row) => ({
+      name: row[xaxis] || "Unknown",
+      total: Number(row[yaxis]) || 0,
+    }));
+  }
+
   return (
     <div className="charts-root">
       <h1 className="charts-title">Analytics Dashboard</h1>
@@ -38,7 +45,7 @@ export default function Charts() {
             <div className="chart-card" key={index}>
               <h2 className="chart-card-title">{table.metric_name || "Chart"}</h2>
 
-              {type === "bar_chart" && <WalletBalanceChart data={data} />}
+              {type === "bar_chart" && <WalletBalanceChart data={getNeededCols(data, "first_name", "total_balance")} />}
               {type === "line_chart" && <GamePlayDaysChart data={data} />}
               {type === "bar_chart2" && <CommissionChart data={data} />}
             </div>
